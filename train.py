@@ -18,10 +18,5 @@ if __name__ == '__main__':
 	plot_model(p2pgan, to_file="gan.png", show_shapes="True")
 
 
-	# p2p.train(name="NBGM", models=[generator, discriminator, p2pgan], epochs=250, batch_size=16, sample_interval=5)
-
-
-	# save=True
-	# if save:
-	# 	generator.save("Removebg_mask.h5")
+	p2p.train(name="NBGM", models=[generator, discriminator, p2pgan], epochs=250, batch_size=16, sample_interval=5)
 
