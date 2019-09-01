@@ -14,17 +14,17 @@
 This project is used for auto remove portrait background. In the future,
 the model perhaps will apply for more object background removed.
 
-> - Generator
+- Generator
 <p align="center">
 	<img src="ModelStructure/gen.png" width="640"\>
 </p>
 
-> - Discriminator
+- Discriminator
 <p align="center">
 	<img src="ModelStructure/dis.png" width="640"\>
 </p>
 
-> - GAN
+- GAN
 <p align="center">
 	<img src="ModelStructure/gan.png" width="640"\>
 </p>
@@ -47,7 +47,7 @@ p2p.train(name="NBGM", models=[generator, discriminator, p2pgan], epochs=250, ba
 - models -> Do not change anything
 - epochs -> Recommend between 250 and 300
 - batch_size -> If you have large video card RAN than me, more it!!
-- sample_interval -> Description as below
+- sample_interval -> Description as below</br>
 Interval for save graphic during model training,
 if dataset size = 300, batch_size = 16, then your have total 18 iters for 250 epochs,
 so this program will save graphic at 1, 5, 10, 15 iter.
