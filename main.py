@@ -7,7 +7,7 @@ import cv2, numpy as np
 from Utils import reverse, normalize
 import Utils
 
-Utils.SET_GPU_MEM() #set GPU memory limit
+Utils.SET_GPU_MEM() #set GPU memory limit, Default: 0.5
 
 #   =============  read row image  ================
 rowImgname = "yourIamgeName.jpg".split(".")[0]
@@ -15,12 +15,6 @@ rowImg = misc.imread(rowImgname+".jpg")
 h,w,c = rowImg.shape
 os.makedirs(rowImgname, exist_ok=True)
 
-
-# ======================================================#
-#														#
-#					Remove background					#
-#														#
-# ======================================================#
 
 #   =============  generative mask_nobg  ================
 model_nobg = load_model("models/yourModelName.h5")

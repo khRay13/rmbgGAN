@@ -19,4 +19,3 @@ if __name__ == '__main__':
 
 
 	p2p.train(name="NBGM", models=[generator, discriminator, p2pgan], epochs=250, batch_size=16, sample_interval=5)
-
