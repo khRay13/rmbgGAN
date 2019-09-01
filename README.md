@@ -39,7 +39,7 @@ nobg_mask.npz(https://mega.nz/#!q4FnyILY!4f6a7rygALMMuUycWWIpn5LhCdwN-LM3ZI2dFHc
 After downloaded, create a folder named `Dataset` and put the dataset in this folder.
 
 ### Training
-There are some parameter that you can modify
+There are some parameter that you can modify in `train.py`
 ```python
 p2p.train(name="NBGM", models=[generator, discriminator, p2pgan], epochs=250, batch_size=16, sample_interval=5)
 ```
@@ -50,7 +50,7 @@ p2p.train(name="NBGM", models=[generator, discriminator, p2pgan], epochs=250, ba
 - sample_interval -> Description as below</br>
 Interval for save graphic during model training,
 if dataset size = 300, batch_size = 16, then your have total 18 iters for 250 epochs,
-so this program will save graphic at 1, 5, 10, 15 iter.
+so this program will save graphic at 1, 5, 10 and 15 iter.
 
 
 After setting, run command as blow:
@@ -58,8 +58,8 @@ After setting, run command as blow:
 python train.py
 ```
 
-### How to run
-1. Find main.py and open it
+### Testing
+1. Find `main.py` and open it
 2. You can modify something as blow
 - Set GPU memory limit, like Utils.SET_GPU_MEM(0.7), so gpu will run with 70% GPU RAM
 ```python
