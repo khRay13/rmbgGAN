@@ -33,7 +33,7 @@ the model perhaps will apply for more object background removed.
 Training -> Generate mask -> mask deNoise -> 'AND' calculate portrait and mask -> portrait without background
 
 ### Dataset
-I prepare a dataset for demo.
+I prepare a dataset for demo.</br>
 nobg_mask.npz(https://mega.nz/#!q4FnyILY!4f6a7rygALMMuUycWWIpn5LhCdwN-LM3ZI2dFHcH1Dw)
 
 After downloaded, create a folder named `Dataset` and put the dataset in this folder.
@@ -59,25 +59,25 @@ python train.py
 ```
 
 ### How to run
-1. Find main.py and open it
-2. You can modify something as blow
-- Set GPU memory limit, like Utils.SET_GPU_MEM(0.7), so gpu will run with 70% GPU RAM
+> 1. Find main.py and open it
+> 2. You can modify something as blow
+>> - Set GPU memory limit, like Utils.SET_GPU_MEM(0.7), so gpu will run with 70% GPU RAM
 ```python
 Utils.SET_GPU_MEM(Default 0.5)
 ```
 
-- Set your images which should be input
+>> - Set your images which should be input
 ```python
 rowImgname = "yourIamgeName.jpg".split(".")[0]
 rowImg = misc.imread(rowImgname+".jpg")
 ```
 
--Set your own model name
+>> - Set your own model name
 ```python
 model_nobg = load_model("models/yourModelName.h5")
 ```
 
-3. After some settings as above, run with the command below
-```bash
+> 3. After some settings as above, run with the command below
+>> ```bash
 python main.py
 ```
