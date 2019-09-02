@@ -34,7 +34,7 @@ Training -> Generate mask -> mask deNoise -> 'AND' calculate portrait and mask -
 
 ### Dataset
 I prepare a dataset for demo.</br>
-nobg_mask.npz(https://mega.nz/#!q4FnyILY!4f6a7rygALMMuUycWWIpn5LhCdwN-LM3ZI2dFHcH1Dw)
+[nobg_mask.npz](https://mega.nz/#!q4FnyILY!4f6a7rygALMMuUycWWIpn5LhCdwN-LM3ZI2dFHcH1Dw)
 
 After downloaded, create a folder named `Dataset` and put the dataset in this folder.
 
